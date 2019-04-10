@@ -89,7 +89,7 @@ export default class Autosuggest extends Component {
     shouldRenderSuggestions: defaultShouldRenderSuggestions,
     alwaysRenderSuggestions: false,
     multiSection: false,
-    focusInputOnSuggestionClick: true,
+    focusInputOnSuggestionClick: false,
     highlightFirstSuggestion: false,
     theme: defaultTheme,
     id: '1'
@@ -418,7 +418,6 @@ export default class Autosuggest extends Component {
       this.closeSuggestions();
     }
 
-    alert('debug: ', focusInputOnSuggestionClick);
     if (focusInputOnSuggestionClick === true) {
       this.input.focus();
     } else {

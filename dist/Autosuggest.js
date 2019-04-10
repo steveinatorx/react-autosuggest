@@ -762,7 +762,7 @@ Autosuggest.defaultProps = {
   shouldRenderSuggestions: defaultShouldRenderSuggestions,
   alwaysRenderSuggestions: false,
   multiSection: false,
-  focusInputOnSuggestionClick: true,
+  focusInputOnSuggestionClick: false,
   highlightFirstSuggestion: false,
   theme: _theme.defaultTheme,
   id: '1'
@@ -892,7 +892,6 @@ var _initialiseProps = function _initialiseProps() {
       _this4.closeSuggestions();
     }
 
-    alert('debug: ', focusInputOnSuggestionClick);
     if (focusInputOnSuggestionClick === true) {
       _this4.input.focus();
     } else {
