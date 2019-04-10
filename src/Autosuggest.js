@@ -418,6 +418,7 @@ export default class Autosuggest extends Component {
       this.closeSuggestions();
     }
 
+    alert('debug: ', focusInputOnSuggestionClick)
     if (focusInputOnSuggestionClick === true) {
       this.input.focus();
     } else {
